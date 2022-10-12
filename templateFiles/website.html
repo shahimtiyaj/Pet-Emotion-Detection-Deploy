@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Machine Learning Web App</title>
+        <style>
+            .button {
+              background-color: #4CAF50; /* Green */
+              border: none;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+            .button2 {background-color: #008CBA;} /* Blue */
+            </style>
+    </head>
+    
+    <body>
+        <form name="form", method="POST", style="text-align: center;">
+            <!-- <br>
+            Height: <input type="number" name="height", placeholder="Enter height in cm" required/>
+            <br><br>
+            Weight: <input type="number" name="weight", placeholder="Enter weight in kg" required/>
+            <br><br> -->
+            <button class="button">RUN</button>
+        </form>
+        <p style="text-align: center;">{{ output|safe}}</p>
+    </body>
+</html>
