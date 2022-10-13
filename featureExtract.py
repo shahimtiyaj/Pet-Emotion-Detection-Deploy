@@ -1,7 +1,4 @@
-from gettext import npgettext
 import scipy.stats as stats
-import pandas as pd
-import framesCreate as fc
 import numpy as np
 
 def get_frames(df, frame_size, hop_size):

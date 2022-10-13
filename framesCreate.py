@@ -1,11 +1,6 @@
 import pandas as pd
 import numpy as np
 from scipy import stats
-import pickle
-import tensorflow
-from tensorflow import keras
-
-from sklearn.preprocessing import StandardScaler 
 
 def feature_acc(df):
     ax_list = []
