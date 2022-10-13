@@ -2,20 +2,11 @@ from flask import Flask, render_template, request, session
 import pandas as pd
 import os
 from werkzeug.utils import secure_filename
-
-from distutils.log import Log
-from flask import Flask, request, render_template
 import pandas as pd
-import joblib
-import tensorflow as tf
 import numpy as np
-from keras.models import load_model
-import h5py
 from tensorflow import keras
-import re
 import featureExtract as fx
 from sklearn.preprocessing import LabelBinarizer
-from mlxtend.plotting import plot_confusion_matrix
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
 
@@ -32,7 +23,7 @@ app = Flask(__name__, template_folder='templateFiles', static_folder='staticFile
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
  
 # Define secret key to enable session
-app.secret_key = 'This is your secret key to utilize session in Flask'
+app.secret_key = 'a2OT5vev6W'
  
  
 @app.route('/')
